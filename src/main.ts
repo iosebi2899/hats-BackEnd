@@ -5,6 +5,9 @@ import cors from 'cors';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors();
-  await app.listen(5000);
+  const port = process.env.port || 5000;
+  await app.listen(port, () => {
+    console.log('Sever console log.');
+  });
 }
 bootstrap();
