@@ -8,7 +8,7 @@ import { ProductsModule } from './products/product.module';
   imports: [
     ProductsModule,
     MongooseModule.forRoot(
-      'mongodb+srv://IosebOne:sVtFTQbLFTApiSBC@richcluster.3x2ou.mongodb.net/hats?retryWrites=true&w=majority',
+      'mongodb+srv://IosebOne:wYixgoertPu4Nc8G@production.s6jmo.mongodb.net/hats?retryWrites=true&w=majority',
     ),
   ],
   controllers: [AppController],
